@@ -24,14 +24,19 @@ The final implementation can be found in the 'rags' folder, the Final.ipynb.
 Example usage:
 llm_to_AutoML_translator("Train a model that can estimate density based on volume and mass given the objects dataset")
 
-This will have as output:
+This will print:
+
 intermediate:
+
 Regression, dependent attribute: density, independent attributes: volume, mass.
 
 
 AutoML Symbols:	
+
 [loadData,calculateDensity,calculateVolume,splitTrainTestData,knnRegression,regressionMSEError]
+
 Data columns:
+
 [[],[massInKilograms,surfaceInSquareMeters],[surfaceInSquareMeters,heightInMeters],[],[[volume,mass],density],knnRegression_OUTPUT]
 
 
