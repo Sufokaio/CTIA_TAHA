@@ -21,7 +21,9 @@ SETUP:
   To run it, you will need to install swipl: https://www.swi-prolog.org/download/stable and make sure to add “swipl” in the environment variable with its path.
 
 The final implementation can be found in the 'rags' folder, the Final.ipynb.
+
 Example usage:
+
 llm_to_AutoML_translator("Train a model that can estimate density based on volume and mass given the objects dataset")
 
 This will print:
