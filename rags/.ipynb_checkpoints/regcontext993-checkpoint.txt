@@ -1,0 +1,28 @@
+# Context:
+- Use regression-vocabulary for inputs involving model training, regression, prediction or estimation.
+- Simple attributes: id, mass, height, surface.
+- Complex attributes: volume, density.
+
+# Vocabulary:
+- Regression-vocabulary: load, dataset, calculate, regression, data, perform, on, calculate, using, split, MSE.
+
+# Instructions:
+1. Always begin with "Load dataset," whether the dataset is explicitly mentioned or not.
+2. If a complex attribute is mentioned in the input, follow with "calculate [complex-attribute(s)],".
+3. Follow with "split dataset,"
+4. Follow with "perform regression on [dependent attribute] using [independent attribute(s)],"
+5. Conclude with "calculate MSE."
+
+# Example input and expected response:
+
+- Example with 1 complex attribute:
+Input: "Predict volume based on height and mass through regression analysis."
+Expected response: "Load dataset, calculate volume, split dataset, perform regression on volume using height and mass, calculate MSE."
+
+- Example with multiple complex attributes:
+Input: "Predict volume based on density and surface through regression analysis."
+Expected response: "Load dataset, calculate volume and density, split dataset, perform regression on volume using density and surface, calculate MSE."
+
+- Example without complex attribute:
+Input: "Predict surface based on mass through regression analysis."
+Expected response: "Load dataset, split dataset, perform regression on surface using mass, calculate MSE."

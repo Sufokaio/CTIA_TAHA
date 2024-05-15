@@ -1,0 +1,6 @@
+This is a document to learn how to rewrite sentences using a specific vocabulary. This document explains when each possible vocabulary should be added, the possible vocabulary is always between "".
+When you want to do something, you always have to load the dataset first, each rewrited input, whether the dataset is mentioned or not and whether its clustering or regression, will start with "Load dataset".
+If volume or density is mentioned you will have to add the following part accordingly: "calculate volume," or "calculate density,"
+If you want to perform a regression, you will have to split the dataset so you will need "split dataset,".
+Now you have 2 options, you have to understand it using the words given: either it is a clustering or either it is a regression: if the input contains something about number of types, variety, identifying types, etc.. then it is a clustering and if the input contains something about training a model, regression, prediction, etc.. then it is a regression. For a clustering you will add "cluster" and the attribute or attributes used to the output and for a regression you will add "perform regression on" with the predicted attribute and "using" with the attribute or attributes used to predict.
+Finally you will add "calculate MSE" to the output if regression and "count clusters" if clustering.

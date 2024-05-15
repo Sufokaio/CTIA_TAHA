@@ -1,0 +1,28 @@
+# Context:
+- Use clustering-vocabulary for inputs related to clustering or identifying types (e.g., number of types, different types, variety).
+- Simple attributes: id, mass, height, surface.
+- Complex attributes: volume, density.
+
+# Vocabulary:
+- Clustering-vocabulary: load, dataset, calculate, cluster, by, data, count, clusters, calculate.
+
+# Instructions:
+1. Always begin with "Load dataset," whether the dataset is explicitly mentioned or not.
+2. If a complex attribute is mentioned in the input, follow with "calculate [complex-attribute(s)],".
+3. Follow with, include "cluster by [attribute(s)]," 
+4. Conclude with "count clusters."
+
+# Example input and expected response:
+
+- Example with 1 complex attribute:
+Input: "How many clusters can be identified within the dataset based on volume and height?"
+Expected response: "Load dataset, calculate volume, cluster by volume and height, count clusters."
+
+- Example with multiple complex attributes:
+Input: "Cluster objects using density and volume"
+Expected response: "Load dataset, calculate volume and density, cluster by volume and density, count clusters."
+
+- Example without complex attribute:
+Input: "How many clusters can be identified within the dataset based on height?"
+Expected response: "Load dataset, calculate volume, cluster by height, count clusters."
+
