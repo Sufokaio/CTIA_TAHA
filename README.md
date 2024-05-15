@@ -12,9 +12,9 @@ SETUP:
   - txtai 7.0.0
   
   The following is also required:
-  pip install txtai[pipeline-data]
-  pip install txtai[pipeline-llm]  
-  pip install txtai[pipeline-text]
+  - pip install txtai[pipeline-data]
+  - pip install txtai[pipeline-llm]  
+  - pip install txtai[pipeline-text]
 
   PARSER PART:
   The parser is implemented using prolog, the python script uses the parser using the “subprocess” library (which does terminal commands).
